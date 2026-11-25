@@ -1,0 +1,101 @@
+{
+  "feature_columns": [
+    "age",
+    "distance_km",
+    "fee_inr",
+    "lead_days",
+    "prior_no_shows",
+    "reminder_sent",
+    "booking_channel_App",
+    "booking_channel_Phone",
+    "booking_channel_Walk-In",
+    "visit_type_Consultation",
+    "visit_type_Follow-up"
+  ],
+  "train_rows": 792,
+  "test_rows": 198,
+  "test_no_shows": 49,
+  "baseline_accuracy": 0.7525252525252525,
+  "logistic_metrics": {
+    "accuracy": 0.7878787878787878,
+    "confusion_matrix": [
+      [
+        139,
+        10
+      ],
+      [
+        32,
+        17
+      ]
+    ],
+    "precision": 0.6296296296296297,
+    "recall": 0.3469387755102041,
+    "f1": 0.4473684210526316,
+    "roc_auc": 0.788933022873579
+  },
+  "reminder_odds_ratio_per_sd": 0.559524141750829,
+  "reminder_odds_ratio_no_to_yes": 0.3093980903124433,
+  "tree_metrics": {
+    "full_depth_train_accuracy": 1.0,
+    "full_depth_test_accuracy": 0.6717171717171717,
+    "full_depth_actual_depth": 15,
+    "depth3_train_accuracy": 0.821969696969697,
+    "depth3_test_accuracy": 0.7777777777777778
+  },
+  "random_forest_metrics": {
+    "accuracy": 0.7474747474747475,
+    "recall": 0.30612244897959184,
+    "roc_auc": 0.7057252431173813
+  },
+  "rf_top_features": [
+    {
+      "feature": "lead_days",
+      "importance": 0.21990547110065853
+    },
+    {
+      "feature": "age",
+      "importance": 0.19678780126634898
+    },
+    {
+      "feature": "distance_km",
+      "importance": 0.19473924793399736
+    }
+  ],
+  "model_selection": {
+    "selected_model": "logistic_regression",
+    "cv_auc_scores": {
+      "logistic_regression": 0.7737139899948249,
+      "decision_tree_depth3": 0.6784494968661952,
+      "random_forest": 0.7466024782933701,
+      "tuned_random_forest": 0.7673242251739405
+    },
+    "grid_best_params": {
+      "max_depth": 3,
+      "n_estimators": 200
+    },
+    "grid_best_cv_auc": 0.7673242251739405,
+    "threshold_comparison": [
+      {
+        "threshold": 0.5,
+        "precision": 0.5753424657534246,
+        "recall": 0.2485207100591716,
+        "f1": 0.34710743801652894,
+        "flagged": 73
+      },
+      {
+        "threshold": 0.35,
+        "precision": 0.512987012987013,
+        "recall": 0.46745562130177515,
+        "f1": 0.4891640866873065,
+        "flagged": 154
+      }
+    ],
+    "selected_threshold": 0.35,
+    "test_precision": 0.5714285714285714,
+    "test_recall": 0.5714285714285714,
+    "test_f1": 0.5714285714285714,
+    "test_roc_auc": 0.788933022873579,
+    "test_flagged": 49,
+    "test_rows": 198
+  }
+}

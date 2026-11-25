@@ -1,0 +1,35 @@
+SQL VERIFICATION (SQLite execution of the submitted load_data.sql and Part 2 queries)
+Clinics: 8
+Appointments / no-shows: (990, 218)
+
+Task 2.2 clinic rates
+('Hadapsar Care Centre', 'Pune', 143, 39, 27.3)
+('Malviya Nagar Clinic', 'Jaipur', 142, 38, 26.8)
+('Kothrud Family Clinic', 'Pune', 160, 36, 22.5)
+('Vijay Nagar Clinic', 'Indore', 101, 21, 20.8)
+('Edappally Medical Centre', 'Kochi', 142, 23, 16.2)
+('Vaishali Nagar Clinic', 'Jaipur', 130, 18, 13.8)
+
+Task 2.3 lead-time bands
+('1-7', 390, 63, 16.2)
+('8-14', 304, 53, 17.4)
+('15-30', 253, 76, 30.0)
+('31+', 43, 26, 60.5)
+
+Task 2.4 monthly trend
+('2025-01', 157, 24.8, None)
+('2025-02', 151, 20.5, -4.3)
+('2025-03', 142, 20.4, -0.1)
+('2025-04', 177, 20.9, 0.5)
+('2025-05', 198, 23.7, 2.8)
+('2025-06', 165, 21.2, -2.5)
+
+Task 2.5 city ranks
+('Vijay Nagar Clinic', 'Indore', 20.8, 1, 'below')
+('Malviya Nagar Clinic', 'Jaipur', 26.8, 1, 'above')
+('Vaishali Nagar Clinic', 'Jaipur', 13.8, 2, 'below')
+('Edappally Medical Centre', 'Kochi', 16.2, 1, 'below')
+('Gomti Nagar Care Point', 'Lucknow', 33.3, 1, 'above')
+('Sitabuldi Health Point', 'Nagpur', 15.9, 1, 'below')
+('Hadapsar Care Centre', 'Pune', 27.3, 1, 'above')
+('Kothrud Family Clinic', 'Pune', 22.5, 2, 'above')

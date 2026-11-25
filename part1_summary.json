@@ -1,0 +1,61 @@
+{
+  "raw_rows": 1020,
+  "accepted": 988,
+  "rejected": 32,
+  "raw_shape": [
+    1020,
+    14
+  ],
+  "raw_duplicates": 20,
+  "after_dedup": 1000,
+  "clean_rows": 990,
+  "invalid_ages": 5,
+  "median_age": 48.0,
+  "median_distance": 8.25,
+  "fences": {
+    "distance_km": {
+      "q1": 4.625,
+      "q3": 13.0,
+      "iqr": 8.375,
+      "lower": -7.9375,
+      "upper": 25.5625
+    },
+    "fee_inr": {
+      "q1": 500.0,
+      "q3": 787.5,
+      "iqr": 287.5,
+      "lower": 68.75,
+      "upper": 1218.75
+    }
+  },
+  "capped": {
+    "distance_km": 26,
+    "fee_inr": 3
+  },
+  "means": [
+    48.173737373737374,
+    9.50090909090909,
+    635.7141414141414,
+    11.819191919191919
+  ],
+  "lead_gt14_count": 296,
+  "lead_gt14_share": 0.298989898989899,
+  "distance_abs_z_gt2": 53,
+  "lead_days_min": 1,
+  "lead_days_max": 45,
+  "no_shows": 218,
+  "no_show_rate_pct": 22.0,
+  "weather_status": {
+    "C01": "NOT_RUN_OFFLINE",
+    "C02": "NOT_RUN_OFFLINE",
+    "C03": "NOT_RUN_OFFLINE",
+    "C04": "NOT_RUN_OFFLINE",
+    "C05": "NOT_RUN_OFFLINE",
+    "C06": "NOT_RUN_OFFLINE",
+    "C07": "NOT_RUN_OFFLINE",
+    "C08": "NOT_RUN_OFFLINE"
+  },
+  "appointments_unique": true,
+  "missing_in_final": 0,
+  "load_insert_statements": 998
+}

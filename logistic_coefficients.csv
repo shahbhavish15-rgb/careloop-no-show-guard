@@ -1,0 +1,12 @@
+feature,coefficient_scaled
+age,-0.2538801442716842
+distance_km,0.25344770956317536
+fee_inr,0.4527614630856424
+lead_days,0.6144707304969084
+prior_no_shows,0.6496116219621333
+reminder_sent,-0.5806686033659922
+booking_channel_App,-0.04680357040738988
+booking_channel_Phone,0.21588137492827028
+booking_channel_Walk-In,-0.18636416836300687
+visit_type_Consultation,0.015658011798355062
+visit_type_Follow-up,-0.015658011798355315
